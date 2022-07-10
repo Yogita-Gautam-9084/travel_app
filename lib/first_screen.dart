@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/constants/colors.dart';
+import 'package:travel_app/constants/icon_constants.dart';
+import 'package:travel_app/constants/string_constants.dart';
 import 'package:travel_app/second_screen.dart';
 
 class FirstScreen extends StatefulWidget {
@@ -15,7 +18,7 @@ class _FirstScreenState extends State<FirstScreen> {
       body: SafeArea(
         child: Stack(
           children: [
-            Container(
+            SizedBox(
               height: 800,
               child: Image.asset(
                 'assets/Travel.png',
@@ -28,61 +31,63 @@ class _FirstScreenState extends State<FirstScreen> {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(70),
-                    child: InkWell(onTap: (){
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=> SecondScreen()));
-                    },
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const SecondScreen()));
+                      },
                       child: Image.asset(
-                        'assets/Boy.png',
+                        'assets/boy.png',
                         height: 70,
                         width: 70,
                       ),
                     ),
                   ),
-                  Spacer(),
-                  Icon(
-                    Icons.airplanemode_active,
-                    color: Colors.white,
+                  const Spacer(),
+                   const Icon(
+                    IconConstants.aeroplane,
+                    color: ColorsConstants.white,
                     size: 35,
                   ),
                 ],
               ),
             ),
-
             Padding(
-              padding: const EdgeInsets.only(bottom: 50,left: 20,right: 20),
+              padding: const EdgeInsets.only(bottom: 50, left: 20, right: 20),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'ON THE SKY',
+                  const Text(
+              StringConstants.onTheSky,
                     style: TextStyle(
-                        color: Colors.white,
+                        color: ColorsConstants.white,
                         fontSize: 40,
                         fontWeight: FontWeight.bold),
                   ),
-                  Text(
-                    'Travelling-It leaves you speechless,Then turns you into a Storyteller',
+                  const Text(
+                    StringConstants.storyTeller,
                     style: TextStyle(color: Colors.white, fontSize: 16),
                   ),
-                  SizedBox(height: 25,),
-
+                  const SizedBox(
+                    height: 25,
+                  ),
                   TextField(
                     decoration: InputDecoration(
-                      prefixIcon: Icon(
-                        Icons.search,
-                        color: Colors.grey,
+                      prefixIcon: const Icon(
+                        IconConstants.search,
+                        color: ColorsConstants.grey,
                       ),
-                      suffixIcon: Icon(
-                        Icons.settings_voice,
-                        color: Colors.grey,
+                      suffixIcon: const Icon(
+                        IconConstants.record,
+                        color: ColorsConstants.grey,
                       ),
                       fillColor: Colors.white,
                       filled: true,
-                      hintStyle: TextStyle(
-                        color: Colors.grey,
+                      hintStyle: const TextStyle(
+                        color: ColorsConstants.grey,
                       ),
-                      hintText: 'Enter the world',
+                      hintText: StringConstants.findTheWorld,
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                           borderSide: BorderSide.none),
