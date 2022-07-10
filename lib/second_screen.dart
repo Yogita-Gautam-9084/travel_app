@@ -28,9 +28,10 @@ class _SecondScreenState extends State<SecondScreen> {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(70),
                           child: Image.asset(
-                            'assets/boy.png',
+                            'assets/arjun.png',
                             height: 70,
                             width: 70,
+                            fit: BoxFit.cover,
                           ),
                         ),
                         const SizedBox(
@@ -188,7 +189,7 @@ class _SecondScreenState extends State<SecondScreen> {
                                     const Text(
                                       StringConstants.mauritius,
                                       style: TextStyle(
-                                          color: ColorsConstants.black, fontSize: 20),
+                                          color: ColorsConstants.white, fontSize: 20),
                                     )
                                   ],
                                 ),

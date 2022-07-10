@@ -37,14 +37,15 @@ class _FirstScreenState extends State<FirstScreen> {
                             builder: (context) => const SecondScreen()));
                       },
                       child: Image.asset(
-                        'assets/boy.png',
+                        'assets/arjun.png',
                         height: 70,
                         width: 70,
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
                   const Spacer(),
-                   const Icon(
+                  const Icon(
                     IconConstants.aeroplane,
                     color: ColorsConstants.white,
                     size: 35,
@@ -59,7 +60,7 @@ class _FirstScreenState extends State<FirstScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-              StringConstants.onTheSky,
+                    StringConstants.onTheSky,
                     style: TextStyle(
                         color: ColorsConstants.white,
                         fontSize: 40,
