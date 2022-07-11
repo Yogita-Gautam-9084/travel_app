@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/first_screen.dart';
+import 'package:travel_app/pofile_screen.dart';
+import 'aria_zidoniro.dart';
 
 
 void main() {
@@ -9,7 +10,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,8 +19,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FirstScreen(),
+      // home: const FirstScreen(),
       // home: const SecondScreen(),
+      // home: const AriaZidoniro(),
+    home: const ProfileScreen(),
     );
+
   }
 }
