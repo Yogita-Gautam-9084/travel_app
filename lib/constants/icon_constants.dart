@@ -21,4 +21,13 @@ class IconConstants {
   static const profile = Icons.contact_page_outlined;
   static const backArrow = Icons.arrow_back;
   static const arrow = Icons.arrow_forward_ios;
+  static const star = Icons.star;
+
+
+  static const circleImg = Icons.menu;
+  static const youTube = Icons.video_collection;
+  static const forward = Icons.forward_5_outlined;
+  static const clock = Icons.lock_clock;
+  static const circle = Icons.circle_notifications;
+
 }

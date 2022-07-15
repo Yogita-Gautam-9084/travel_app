@@ -14,40 +14,39 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white30,
-        body: SafeArea(
-          child: Stack(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Row(
-                  children: [
-                    Text(
-                      StringConstants.profile,
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                    ),
-                    Spacer(),
-                    Icon(
-                      IconConstants.setting,
-                      color: ColorsConstants.black,
-                    ),
-                  ],
-                ),
+      backgroundColor: Colors.white30,
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Row(
+                children: [
+                  const Text(
+                    StringConstants.profile,
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  Spacer(),
+                  const Icon(
+                    IconConstants.setting,
+                    color: ColorsConstants.black,
+                  ),
+                ],
               ),
-              Positioned(
-
-                child:  Container(
-                decoration: BoxDecoration(
+            ),
+            Positioned(
+              child: Container(
+                decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(20),
                       topRight: Radius.circular(20),
                     ),
                     color: ColorsConstants.white),
-              ),)
-
-            ],
-          ),
-        ));
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
