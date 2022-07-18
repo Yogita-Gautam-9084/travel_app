@@ -63,5 +63,14 @@ class StringConstants {
   static const String online = 'Teaches Online ';
   static const String rating = '4,6(2923 ratings)';
   static const String schedule =  'Course Schedule';
-  static const String dollar = '160';
+  static const String dollar = '\$160';
+  static const String dollar2 ='\$120';
+  static const String day1 = '1 Day';
+  static const String day2 = '2 Day';
+  static const String day3 = '3 Day';
+  static const String introduction = 'Introduction to Science';
+  static const String body = 'whats the nature of body';
+  static const String enroll = 'Enroll course now';
+  static const String instructor ='Instructor';
+  static const String peopleEnrolled = '2.5K people enrolled';
 }

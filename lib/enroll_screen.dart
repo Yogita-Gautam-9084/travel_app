@@ -103,26 +103,14 @@ class _EnrollScreenState extends State<EnrollScreen> {
                               child: Column(
                                 children: const [
                                   Text(StringConstants.dollar),
-                                  Text('hj'),
+                                  Text(StringConstants.dollar2),
                                 ],
                               ),
                             ),
                           ],
                         ),
                         const SizedBox(
-                          height: 20,
-                        ),
-                        const Text(
-                          StringConstants.rate,
-                          style: TextStyle(color: ColorsConstants.grey),
-                        ),
-                        const Icon(
-                          IconConstants.star,
-                          color: ColorsConstants.yellow,
-                        ),
-                        const Text(StringConstants.highRate),
-                        const SizedBox(
-                          height: 30,
+                          height: 80,
                         ),
                         Container(
                           padding: const EdgeInsets.symmetric(
@@ -173,13 +161,148 @@ class _EnrollScreenState extends State<EnrollScreen> {
                           ),
                         ),
                         const SizedBox(
-                          height: 10,
+                          height: 30,
                         ),
                         const Text(StringConstants.schedule),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        Row(
+                          children: [
+                            Row(
+                              children: [
+                                const Text(StringConstants.day1),
+                                const SizedBox(
+                                  width: 30,
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      vertical: 15, horizontal: 60),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(20),
+                                      color: ColorsConstants.white),
+                                  child:
+                                      const Text(StringConstants.introduction),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        Row(
+                          children: [
+                            Row(
+                              children: [
+                                const Text(StringConstants.day2),
+                                const SizedBox(
+                                  width: 30,
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      vertical: 15, horizontal: 60),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(20),
+                                      color: ColorsConstants.white),
+                                  child: const Text(StringConstants.body),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        Row(
+                          children: [
+                            Row(
+                              children: [
+                                const Text(StringConstants.day3),
+                                const SizedBox(
+                                  width: 30,
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      vertical: 15, horizontal: 60),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(20),
+                                      color: ColorsConstants.white),
+                                  child: const Text(StringConstants.body),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 15),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  color: ColorsConstants.white),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(30),
+                                child: const Icon(IconConstants.fileCopy),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 60, vertical: 15),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  color: ColorsConstants.blueGrey),
+                              child: Row(
+                                children: const [
+                                  Text(
+                                    StringConstants.enroll,
+                                    style:
+                                        TextStyle(color: ColorsConstants.white),
+                                  ),
+                                  Icon(
+                                    IconConstants.arrow,
+                                    color: ColorsConstants.white,
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
                 ],
+              ),
+            ),
+            const Positioned(
+              top: 220,
+              left: 350,
+              child: Text(StringConstants.highRate),
+            ),
+            const Positioned(
+              top: 215,
+              left: 320,
+              child: Icon(
+                IconConstants.star,
+                color: ColorsConstants.yellow,
+              ),
+            ),
+            const Positioned(
+              top: 220,
+              left: 130,
+              child: Text(
+                StringConstants.rate,
+                style: TextStyle(color: ColorsConstants.grey),
               ),
             ),
             Positioned(
@@ -218,7 +341,6 @@ class _EnrollScreenState extends State<EnrollScreen> {
                     height: 30, width: 30, fit: BoxFit.cover),
               ),
             ),
-
           ],
         ),
       ),

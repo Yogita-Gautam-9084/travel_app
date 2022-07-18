@@ -29,5 +29,6 @@ class IconConstants {
   static const forward = Icons.forward_5_outlined;
   static const clock = Icons.lock_clock;
   static const circle = Icons.circle_notifications;
+  static const fileCopy = Icons.file_copy;
 
 }

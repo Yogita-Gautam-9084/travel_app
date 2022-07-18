@@ -26,8 +26,8 @@ class MyApp extends StatelessWidget {
       // home: const SecondScreen(),
       // home: const AriaZidoniro(),
     // home: const ProfileScreen(),
-    //   home: const EdulifesScreen(),
-     home: const JonathanScreen(),
+      home: const EdulifesScreen(),
+    //  home: const JonathanScreen(),
       // home: const EnrollScreen(),
     );
 
