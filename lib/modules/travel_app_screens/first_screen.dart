@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel_app/constants/colors.dart';
 import 'package:travel_app/constants/icon_constants.dart';
 import 'package:travel_app/constants/string_constants.dart';
-import 'package:travel_app/second_screen.dart';
+import 'package:travel_app/modules/travel_app_screens/second_screen.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({Key? key}) : super(key: key);

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel_app/constants/colors.dart';
 import 'package:travel_app/constants/icon_constants.dart';
 import 'package:travel_app/constants/string_constants.dart';
-import 'package:travel_app/jonathan_screen.dart';
+import 'package:travel_app/modules/online_education_app/jonathan_screen.dart';
 
 class EdulifesScreen extends StatefulWidget {
   const EdulifesScreen({Key? key}) : super(key: key);

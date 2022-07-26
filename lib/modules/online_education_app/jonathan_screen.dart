@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:travel_app/constants/colors.dart';
 import 'package:travel_app/constants/icon_constants.dart';
 import 'package:travel_app/constants/string_constants.dart';
-import 'package:travel_app/enroll_screen.dart';
+
+
+import 'enroll_screen.dart';
 
 class JonathanScreen extends StatefulWidget {
   const JonathanScreen({Key? key}) : super(key: key);

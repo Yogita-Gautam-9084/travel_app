@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/edulifes_screen.dart';
-import 'package:travel_app/enroll_screen.dart';
-import 'package:travel_app/jonathan_screen.dart';
-import 'package:travel_app/pofile_screen.dart';
-import 'aria_zidoniro.dart';
+import 'package:travel_app/modules/online_education_app/edulifes_screen.dart';
+import 'package:travel_app/modules/online_education_app/enroll_screen.dart';
+import 'package:travel_app/modules/online_education_app/jonathan_screen.dart';
+import 'modules/travel_app_screens/first_screen.dart';
+import 'modules/travel_app_screens/second_screen.dart';
+import 'modules/online_education_app/enroll_screen.dart';
 
 
 void main() {
@@ -12,7 +13,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
 
   @override
   Widget build(BuildContext context) {
@@ -24,13 +24,9 @@ class MyApp extends StatelessWidget {
       ),
       // home: const FirstScreen(),
       // home: const SecondScreen(),
-      // home: const AriaZidoniro(),
-    // home: const ProfileScreen(),
       home: const EdulifesScreen(),
-    //  home: const JonathanScreen(),
-      // home: const EnrollScreen(),
+      // home: const JonathanScreen(),
+      //  home: const EnrollScreen(),
     );
-
-
   }
 }
